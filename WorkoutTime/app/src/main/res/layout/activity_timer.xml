@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".TimerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backButtonTimer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="backPressed"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <TextView
+                android:id="@+id/textViewRitualTimer"
+                android:layout_width="0dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryText"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:text="WorkoutName" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="match_parent"
+            android:textSize="40sp"
+            android:textColor="@color/colorOrange"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:background="@drawable/shapecircle"
+            android:layout_weight="4"
+            android:text="Time Remaining" />
+
+        <LinearLayout
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonBack"
+                android:layout_width="0dp"
+                android:onClick="onButtonPrevious"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:src = "@drawable/ic_keyboard_arrow_left_24px" />
+
+            <ImageButton
+                android:id="@+id/buttonPause"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:onClick="onbuttonPause"
+                android:src="@drawable/ic_pause_24px"
+                android:text="Pause" />
+
+            <ImageButton
+                android:id="@+id/buttonStop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:onClick="onbuttonStop"
+                android:src="@drawable/ic_stop_24px"
+                android:text="Stop" />
+
+            <ImageButton
+                android:id="@+id/buttonSkip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:onClick="onbuttonSkip"
+                android:src="@drawable/ic_navigate_next_24px"
+                android:text="Skip" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
