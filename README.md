@@ -1,7 +1,7 @@
 # Workout-Application
 Android application to set up and follow workout routine.
 
-# Screenshots
+### Screenshots
 
 ![WhatsApp Image 2021-10-21 at 21 43 42 (3)](https://user-images.githubusercontent.com/71772683/139200704-bff3f8e4-3c49-412b-8f71-5c37b2961386.jpeg)
 ![WhatsApp Image 2021-10-21 at 21 43 42 (2)](https://user-images.githubusercontent.com/71772683/139200723-f8769b57-eca4-4a1a-8b51-39f4b51017f4.jpeg)
@@ -9,7 +9,7 @@ Android application to set up and follow workout routine.
 ![WhatsApp Image 2021-10-21 at 21 43 42](https://user-images.githubusercontent.com/71772683/139200748-5e7eba3a-c743-489c-bef0-35a857f59039.jpeg)
 
 
-# Features
+### Features
 1. Users can create, edit or delete workout Profiles
 2. Users can create, edit or delete workouts to a specific profile.
 3. Users can Set reminders. 
